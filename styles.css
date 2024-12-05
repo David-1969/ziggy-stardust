@@ -1,0 +1,204 @@
+/* Fonte "cool" - Lobster */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Estilo do Header Principal */
+.header-bar {
+    background-color: #4CAF50; /* Faixa verde */
+    color: #fff; /* Texto branco */
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Lobster', cursive; /* Fonte Cool */
+    font-size: 48px; /* Tamanho grande */
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Ajustes no Header da Barra de Navegação */
+header {
+    margin-bottom: 30px; /* Espaçamento do header */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+}
+
+/* Flexbox para a navbar */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os itens */
+    padding: 0 30px;
+}
+
+/* Estilo dos links de navegação */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    margin-right: 125px; /* Espaço entre os links */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Estilo quando o mouse passa sobre o link */
+.navbar-nav .nav-link:hover {
+    color: #4CAF50 !important; /* Efeito de cor verde ao passar o mouse */
+}
+
+/* Estilo do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ddd;
+}
+
+/* Títulos das Seções - Fonte mais jovem com efeito de brilho */
+h2 {
+    font-size: 28px; /* Aumentei o tamanho da fonte para chamar mais atenção */
+    font-weight: bold;
+    color: #4CAF50;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    transition: text-shadow 0.3s ease; /* Transição suave para o brilho */
+}
+
+h2:hover {
+    text-shadow: 0 0 10px #4CAF50; /* Efeito de brilho verde */
+}
+
+/* Ajustes para os containers de álbuns */
+.album-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+/* Efeito para os botões de setas */
+.arrow-left, .arrow-right {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    background-color: #45a049;
+}
+
+.star {
+    font-size: 40px;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.2s;
+}
+
+.star.filled {
+    color: gold;
+}
+
+.star.half {
+    color: gold;
+}
+
+#ratingMessage {
+    font-weight: bold;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+}
+
+#reviewsList .review {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.review .stars {
+    color: gold;
+}
+
+/* Ajustes para o container principal (detalhes do álbum) */
+main {
+    margin-top: 30px;
+    display: flex; /* Ativa o flexbox */
+    justify-content: space-between; /* Coloca a imagem e a div nas extremidades opostas */
+    align-items: flex-start; /* Alinha os itens no topo (você pode ajustar conforme a necessidade) */
+}
+
+/* Imagem do álbum */
+#albumImage {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    order: 1;
+}
+
+/* Detalhes do álbum */
+#albumTitle {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    order: 1;
+    margin-top: 25px;
+}
+
+#albumDescription {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 50px;
+    line-height: 1.6;
+    order: 1;
+    
+}
+
+/* Avaliação por estrelas */
+#starRating {
+    margin-top: 20px;
+    order: 3;
+}
+
+#ratingMessage {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Chat para Resenhas */
+#reviewSection h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#reviewText {
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#submitReview {
+    margin-top: 10px;
+}
+
+/* Exibição das Resenhas */
+#reviewsList {
+    margin-top: 20px;
+}
+
+.review-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-item .review-author {
+    font-weight: bold
+}
